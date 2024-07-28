@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    /*height: 3796px;*/
+    /*height: auto;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /*background-color: #5B483A;*/
+}
+.container {
+    width: 1280px;
+    height: 908px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+header{
+    width: 1200px;
+    height: 60px;
+    margin: 60px 40px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+header h2{
+    color:#F1CDB3;
+    font-family: 'Georgia', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 110%; /* 35.2px */
+    letter-spacing: 1.92px;
+}
+header p{
+    color:#FFF;
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+}
+.headerNav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+.headerNav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.headerNav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #F1CDB3;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+.headerNav ul li a:hover::after {
+    width: 100%;
+}
+/*------------------------------main-----------------------------------*/
+main{
+    width: 1200px;
+    height: 728px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 40px 0 40px;
+}
+.right{
+    width: 698px;
+    height: 728px;
+
+}
+.left{
+    width: 502px;
+    height: 728px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 42px;
+    margin: 163px 42px 243px 40px;
+}
+h1{
+    color: #FFF;
+    font-family: 'Georgia', sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 130%; /* 57.2px */
+}
+.left p{
+    color:#CDCDCD;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%; /* 24px */
+}
+.left button {
+    color: #292929;
+    font-family: 'Georgia', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 130%; /* 22.1px */
+    letter-spacing: 1.02px;
+    display: flex;
+    padding: 15px 45px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #F1CDB3;
+    text-decoration: none;
+}
+.left button:hover {
+    background-color: #F5D6BA; /* Lighter shade */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+.left button:active {
+    background-color: #F0C3A8; /* Darker shade */
+    transform: translateY(2px); /* Slight downward shift */
+}
+/*-----------------------section Shelter Info-------------------------------*/
+.shelterInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    width: 1280px;
+    padding: 80px 40px 100px 40px;
+    gap: 120px;
+}
+section.shelterInfo>div.img{
+    width: 300px;
+    height: 408px;
+    margin-left: 175px;
+}
+section.shelterInfo>div.text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 175px;
+    gap: 25px;
+}
+section.shelterInfo>div.text>h3{
+    color: #545454;
+    font-family: 'Georgia', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 130%; /* 45.5px */
+    letter-spacing: 2.1px;
+}
+section.shelterInfo>div.text>p{
+    color:#4C4C4C;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%; /* 24px */
+}
+/*--------------------------section Pets For Adoption-------------------------*/
+section.petsForAdoption{
+    width: 1280px;
+    height: 877px;
+    padding: 80px 40px 100px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F6F6F6;
+    /*border-top: 1px solid black;*/
+    gap: 60px;
+}
+section.petsForAdoption h3{
+    color: #545454;
+    text-align: center;
+    font-family: 'Georgia', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 130%; /* 45.5px */
+    letter-spacing: 2.1px;
+}
+section.petsForAdoption div.petCards{
+    width: 1200px;
+    height: 697px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+.petCard{
+    display: flex;
+    width: 270px;
+    height: 435px;
+    padding-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 9px;
+    background: #FAFAFA;
+}
+.petName{
+    color: #545454;
+    text-align: center;
+    font-family: 'Georgia', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+.petCard>button{
+    display: flex;
+    padding: 15px 45px;
+    gap: 10px;
+    border-radius: 100px;
+    background: #FAFAFA;
+    border: 2px solid #F1CDB3;
+    color: #292929;
+    font-family: 'Georgia', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 130%; /* 22.1px */
+    letter-spacing: 1.02px;
+}
+.petsForAdoption>button{
+    color: #292929;
+    padding: 15px 45px;
+    gap: 10px;
+    border-radius: 100px;
+    background: #F1CDB3;
+    font-family: 'Georgia', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 130%; /* 22.1px */
+    letter-spacing: 1.02px;
+    border: 2px solid #F1CDB3;
+}
+/*-----------------------section Help The Shelter-----------------------------*/
+section.helpShelter{
+    width: 1280px;
+    padding: 80px 40px 100px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+section.helpShelter h4 {
+    color: #545454;
+    text-align: center;
+    font-family: 'Georgia', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 130%; /* 45.5px */
+    letter-spacing: 2.1px;
+}
+.helpCards{
+    width: 1026px;
+    /*height: 281px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 119px;
+}
+div.helpCard{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #545454;
+    text-align: center;
+    font-family: 'Georgia', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 115%; /* 23px */
+    letter-spacing: 1.2px;
+}
+/*-------------------------------section Donation-----------------------------*/
+section.donation{
+    width: 1280px;
+    padding: 80px 182px 100px 183px;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    background: #F6F6F6;
+    gap: 30px;
+}
+.donationInfo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    /*border: 1px solid black;*/
+}
+.donationInfo h5{
+    color: #545454;
+    font-family: 'Georgia', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 130%; /* 45.5px */
+    letter-spacing: 2.1px;
+}
+div.donationInfo > form{
+    display: flex;
+    flex-direction: column;
+}
+div.donationInfo > form > label {
+    color: #545454;
+    font-family: 'Georgia', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 110%; /* 16.5px */
+    letter-spacing: 0.9px;
+    margin-bottom: 20px;
+}
+.inputWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 9px;
+    background:#F1CDB3;
+    padding: 10px 15px;
+    gap: 15px;
+}
+.donationInfo input[type="text"] {
+    width: auto;
+    height: auto;
+    border-radius: 9px;
+    background: #F1CDB3;
+    border: none;
+    color: #545454;
+    font-family: 'Georgia', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 115%; /* 23px */
+    letter-spacing: 1.2px;
+}
+/*------------------------------------Footer----------------------------------*/
+footer{
+    width: 1280px;
+    height: 350px;
+    background: radial-gradient(549.89% 73.65% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    padding: 40px 40px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+}
+footer a:hover {
+    color: #ffcc00; /* Новый цвет ссылки при наведении */
+    /*text-decoration: none; */
+}
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+address{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 34px;
+}
+
+footer h6{
+    color: #FFF;
+    font-family: 'Georgia', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 130%; /* 45.5px */
+    letter-spacing: 2.1px;
+}
+.email, .phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.address-1, .address-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #F1CDB3;
+}
+
+
+
