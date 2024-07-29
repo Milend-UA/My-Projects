@@ -1,0 +1,66 @@
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+        height: auto; /* Позволяет контейнеру адаптироваться по высоте содержимого */
+
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerNav {
+        display: none; /* Скрываем навигацию */
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        gap: 42px;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .left {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center; /* Центрируем заголовок */
+    }
+
+    .left p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center; /* Центрируем текст */
+    }
+
+    .left button {
+        font-size: 16px;
+        padding: 10px 30px;
+        margin: 0 auto; /* Центрируем кнопку */
+    }
+
+    .right img {
+        width: 100%; /* Изображение будет занимать всю ширину контейнера */
+        height: auto; /* Пропорционально изменяет высоту */
+        max-width: 260px; /* Максимальная ширина изображения */
+        margin: 105px 10px 0.23px 50px;
+    }
+}
