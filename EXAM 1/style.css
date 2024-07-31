@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     width: 100vw;
     display: flex;
@@ -10,6 +13,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
+/*----------------------------------Header------------------------------------*/
 .container {
     width: 100%;
     height: 908px;
@@ -51,51 +55,41 @@ header p{
     letter-spacing: 1.3px;
 }
 .headerNav ul {
-    list-style: none;
+    list-style-type: none;
     display: flex;
     gap: 35px;
 }
 .headerNav ul li a {
-    color: #FFF;
+    color: #CDCDCD;
     text-decoration: none;
-    transition: color 0.3s;
 }
-.headerNav ul li a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #F1CDB3;
-    transition: width 0.3s;
-    margin-top: 5px;
-}
-
-.headerNav ul li a:hover::after {
-    width: 100%;
+.headerNav ul li a:hover {
+    color: #FAFAFA;
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 5px;
 }
 /*------------------------------main-----------------------------------*/
 main{
-    width: 1200px;
+    width: 94%;
     height: 728px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 60px 40px 0 40px;
 }
-.right{
+.mainImg{
     width: 698px;
-    height: 728px;
-
+    height: auto;
 }
-.left{
+.mainText{
     width: 502px;
-    height: 728px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     gap: 42px;
-    margin: 163px 42px 243px 40px;
+    margin: 163px 42px 243px 0;
 }
 h1{
     color: #FFF;
@@ -104,14 +98,14 @@ h1{
     font-weight: 400;
     line-height: 130%; /* 57.2px */
 }
-.left p{
+.mainText p{
     color:#CDCDCD;
     font-family: 'Arial', sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 160%; /* 24px */
 }
-.left button {
+.mainText button {
     color: #292929;
     font-family: 'Georgia', sans-serif;
     font-size: 17px;
@@ -127,17 +121,17 @@ h1{
     background: #F1CDB3;
     text-decoration: none;
 }
-.left button:hover {
+.mainText button:hover {
     background-color: #F5D6BA;
     cursor: pointer;
 }
 
-.left button:active {
+.mainText button:active {
     background-color: #F0C3A8;
     transform: translateY(2px);
 }
 /*-----------------------section Shelter Info-------------------------------*/
-.shelterInfo{
+#shelterInfo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,12 +140,12 @@ h1{
     padding: 80px 40px 100px 40px;
     gap: 120px;
 }
-section.shelterInfo>div.img{
+#shelterInfo > div.img{
     width: 300px;
     height: 408px;
     margin-left: 175px;
 }
-section.shelterInfo>div.text{
+#shelterInfo > div.text{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -159,7 +153,7 @@ section.shelterInfo>div.text{
     margin-right: 175px;
     gap: 25px;
 }
-section.shelterInfo>div.text>h3{
+#shelterInfo > div.text > h3{
     color: #545454;
     font-family: 'Georgia', sans-serif;
     font-size: 35px;
@@ -167,7 +161,7 @@ section.shelterInfo>div.text>h3{
     line-height: 130%; /* 45.5px */
     letter-spacing: 2.1px;
 }
-section.shelterInfo>div.text>p{
+#shelterInfo > div.text > p{
     color:#4C4C4C;
     font-family: 'Arial', sans-serif;
     font-size: 15px;
@@ -175,7 +169,7 @@ section.shelterInfo>div.text>p{
     line-height: 160%; /* 24px */
 }
 /*--------------------------section Pets For Adoption-------------------------*/
-section.petsForAdoption{
+#petsForAdoption{
     width: 100%;
     height: 877px;
     padding: 80px 40px 100px 40px;
@@ -186,7 +180,7 @@ section.petsForAdoption{
     background: #F6F6F6;
     gap: 60px;
 }
-section.petsForAdoption h3{
+#petsForAdoption h3{
     color: #545454;
     text-align: center;
     font-family: 'Georgia', sans-serif;
@@ -195,7 +189,7 @@ section.petsForAdoption h3{
     line-height: 130%; /* 45.5px */
     letter-spacing: 2.1px;
 }
-section.petsForAdoption div.petCards{
+#petsForAdoption div.petCards{
     width: 93%;
     height: 697px;
     display: flex;
@@ -245,7 +239,7 @@ section.petsForAdoption div.petCards{
     background-color: #eee9e9;
     transform: translateY(2px);
 }
-.petsForAdoption > button{
+#petsForAdoption > button{
     color: #292929;
     padding: 15px 45px;
     gap: 10px;
@@ -258,17 +252,17 @@ section.petsForAdoption div.petCards{
     letter-spacing: 1.02px;
     border: 2px solid #F1CDB3;
 }
-.petsForAdoption > button:hover {
+#petsForAdoption > button:hover {
     background-color: #F5D6BA;
     cursor: pointer;
 }
 
-.petsForAdoption > button:active {
+#petsForAdoption > button:active {
     background-color: #F0C3A8;
     transform: translateY(2px);
 }
 /*-----------------------section Help The Shelter-----------------------------*/
-section.helpShelter{
+#helpShelter{
     width: 100%;
     height: auto;
     padding: 80px 40px 100px 40px;
@@ -278,7 +272,7 @@ section.helpShelter{
     flex-direction: column;
     gap: 60px;
 }
-section.helpShelter h4 {
+#helpShelter h4 {
     color: #545454;
     text-align: center;
     font-family: 'Georgia', sans-serif;
@@ -311,7 +305,7 @@ div.helpCard{
     letter-spacing: 1.2px;
 }
 /*-------------------------------section Donation-----------------------------*/
-section.donation{
+#donation{
     width: 100%;
     height: auto;
     padding: 80px 182px 100px 183px;
@@ -391,25 +385,13 @@ footer{
     align-items: center;
     gap: 160px;
 }
-footer a:hover {
-    color: #ffcc00;
-
-}
-.contacts {
+.contacts,.address{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     gap: 40px;
 }
-.address{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 34px;
-}
-
 footer h6{
     color: #FFF;
     font-family: 'Georgia', sans-serif;
@@ -418,19 +400,18 @@ footer h6{
     line-height: 130%; /* 45.5px */
     letter-spacing: 2.1px;
 }
-.email, .phone{
+footer a{
+    text-decoration: none;
+    color: #F1CDB3;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.address-1, .address-2{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
+/*сдул из тырнета :) Сорри, но сильно хотелось получить такой эффект */
+.email:hover, .phone:hover, .address-1:hover, .address-2:hover img {
+    filter: sepia(1) saturate(1000%) hue-rotate(10deg) brightness(1.2); /* Изменение цвета изображения при наведении */
 }
-footer a{
-    text-decoration: none;
-    color: #F1CDB3;
+.email:hover, .phone:hover, .address-1:hover, .address-2:hover a{
+    color: yellow;
 }
