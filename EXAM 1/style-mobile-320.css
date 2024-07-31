@@ -107,11 +107,15 @@
     /*-----------------------section Shelter Info-------------------------------*/
     #shelterInfo{
         width: 100%;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
         background: #FFF;
+        margin: 0 auto;
+        gap: 42px;
+        padding: 0 10px;
     }
     #shelterInfo > div.img{
         width: 260px;
@@ -119,8 +123,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 10px;
-
+        margin: 0 auto;
     }
     #shelterInfo > div.text{
         display: flex;
