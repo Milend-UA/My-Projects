@@ -74,7 +74,6 @@
     .mainImg {
         max-width: 260px;
         height: 271.774px;
-        /*margin: 105px 10px 0 50px;*/
         margin: 105px 0  0 40px;
         display: flex;
         justify-content: center;
@@ -191,7 +190,7 @@
         line-height: 130%;
         letter-spacing: 1.5px;
     }
-    .helpCards {
+    .helpCardsContainer {
         width: 290px;
         height: auto;
         display: grid;
@@ -201,14 +200,6 @@
         align-items: center;
         padding: 0 15px 42px 15px;
     }
-    div.helpCard {
-        width: 90%;
-        font-size: 18px;
-        line-height: 130%;
-        gap: 20px;
-    }
-
-
     div.helpCard{
         display: flex;
         justify-content: flex-start;
@@ -227,13 +218,121 @@
         width: 50px;
         height: 50px;
     }
-
-
-
-
-
-
-
-
-
+    /*-------------------------------section Donation-------------------------*/
+    #donation{
+        width: 320px;
+        height: 542.2px;
+        display: flex;
+        padding: 42px 10px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 42px;
+    }
+    .donationInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .donationInfo h3{
+        color: #545454;
+        font-family: 'Georgia', sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 130%; /* 45.5px */
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+    .bankName{
+        color: #545454;
+        font-family: 'Georgia', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0.9px;
+        text-align: center;
+    }
+    .cardInfo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 9px;
+        background:#F1CDB3;
+        padding: 10px 15px;
+        gap: 15px;
+    }
+    .cardNumber{
+        width: auto;
+        height: auto;
+        border-radius: 9px;
+        background: #F1CDB3;
+        border: none;
+        color: #545454;
+        font-family: 'Georgia', sans-serif;
+        font-size: 15px;
+        line-height: 110%; /* 16.5px */
+        letter-spacing: 0.9px;
+    }
+    .info{
+        color: #B2B2B2;
+        font-family: 'Arial', sans-serif;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 18px; /* 150% */
+        text-align: justify;
+    }
+    .puppyImg img {
+        width: 260px;
+        height: 135.2px;
+        object-fit: cover;
+    }
+    /*------------------------------------Footer------------------------------*/
+    footer{
+        width: 320px;
+        height: auto;
+        background: radial-gradient(549.89% 73.65% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+        padding: 30px 10px 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .contacts,.address{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    footer h3{
+        color: #FFF;
+        font-family: 'Georgia', sans-serif;
+        font-size: 25px;
+        line-height: 130%; /* 32.5px */
+        letter-spacing: 2.0px;
+        text-align: center;
+    }
+    footer a{
+        text-decoration: none;
+        color: #F1CDB3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%; /* 23px */
+        letter-spacing: 1.2px;
+    }
+    .footerImg img {
+        width: 260px;
+        height: 269px;
+        object-fit: cover;
+        margin: 40px 30px -4px 30px;
+    }
 }

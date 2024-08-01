@@ -82,6 +82,7 @@ main{
 .mainImg{
     max-width: 698px;
     height: auto;
+    /*padding: 77px 40px 0 40px;*/
 }
 .mainText{
     width: 502px;
@@ -284,16 +285,16 @@ h1{
     line-height: 130%; /* 45.5px */
     letter-spacing: 2.1px;
 }
-.helpCards{
+.helpCardsContainer{
     width: 80%;
     height: 431px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 119px;
+    gap: 100px;
 }
-div.helpCard{
+.helpCard{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -324,9 +325,8 @@ div.helpCard{
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
-    /*border: 1px solid black;*/
 }
-.donationInfo h5{
+.donationInfo h3{
     color: #545454;
     font-family: 'Georgia', sans-serif;
     font-size: 35px;
@@ -334,20 +334,24 @@ div.helpCard{
     line-height: 130%; /* 45.5px */
     letter-spacing: 2.1px;
 }
-.donationInfo form{
-    display: flex;
-    flex-direction: column;
-}
-.donationInfo label {
+.bankName{
     color: #545454;
     font-family: 'Georgia', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    line-height: 110%; /* 16.5px */
+    line-height: 160%; /* 24px */
     letter-spacing: 0.9px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
-.inputWrapper{
+.info{
+    color: #B2B2B2;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+}
+.cardInfo{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -356,7 +360,7 @@ div.helpCard{
     padding: 10px 15px;
     gap: 15px;
 }
-.donationInfo input[type="text"] {
+.cardNumber{
     width: auto;
     height: auto;
     border-radius: 9px;
@@ -368,14 +372,6 @@ div.helpCard{
     font-weight: 400;
     line-height: 115%; /* 23px */
     letter-spacing: 1.2px;
-}
-.donationInfo p{
-    color: #B2B2B2;
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 18px; /* 150% */
 }
 /*------------------------------------Footer----------------------------------*/
 footer{
@@ -395,7 +391,7 @@ footer{
     flex-direction: column;
     gap: 40px;
 }
-footer h6{
+footer h3{
     color: #FFF;
     font-family: 'Georgia', sans-serif;
     font-size: 35px;
